@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome on board!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: blueviolet;
+            color: white;
+            padding-block: 2rem;
+        }
+
+        main {
+            padding-block: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin-inline: auto;
+        }
+
+        form {
+            padding-block: 2rem;
+        }
+
+        form fieldset {
+            padding: 3rem 2rem;
+        }
+
+        form>button {
+            background-color: blueviolet;
+            padding: 1rem 2rem;
+            color: white;
+            font-weight: 600;
+            display: block;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>My first server :D</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Register a new user</h2>
+            <form action="/create-user" method="post">
+                <input type="text" name="username" id="username">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+    </main>
+</body>
+
+</html>
